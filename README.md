@@ -11,6 +11,8 @@ This is my second semester of Special Topic in NTU Network and Systems Lab aimin
 
 ## 2. Daily Unique Servers (MongoDB)
 
+MongoDB Raw data: https://drive.google.com/drive/folders/1a4QdCcoS7G7oTThWIARGS3Heo-kF_uCJ?usp=sharing
+
 1. All the countries have probes around April to June, 2021. (Note that in this interval, Taiwan only has a small-scale of probes at 2021-04-14 and 15.)
 2. Japan, South Korea, Taiwan, Turkey, United States has additional probes in around November, 2020.
 
