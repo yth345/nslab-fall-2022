@@ -4,9 +4,10 @@ This is my second semester of Special Topic in NTU Network and Systems Lab aimin
 
 ## 1. Schedule
 
-| Date         | Assignment                                                                                                                                                         |
-| ------------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 9/16         | 1. Process data in MongoDB, convert entries to same data format <br> 2. Plot daily number of unique servers found from each vantage point
+| Date  | Assignment                                                                                                                                                         |
+| ----- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 9/16  | 1. Process data in MongoDB, convert entries to same data format <br> 2. Plot daily number of unique servers found from each vantage point|
+| 9/23  | compare the loss of server count when we extract probes from a country (phase 1)
 
 
 ## 2. Daily Unique Servers (MongoDB)
