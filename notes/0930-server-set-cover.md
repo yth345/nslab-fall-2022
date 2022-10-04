@@ -1,13 +1,13 @@
-## 0930 Server Set Cover
+## 0930 Server IP Set Cover
 
-- Data collected from April to July, 2021
-- Involved 18 countries (Australia, Brazil, Canada, Denmark, France, Germany, Italy, 
-Japan, Netherlands, Poland, Russia, South_Korea, Spain, Sweden, Turkey, Ukraine, United_Kingdom, United_States)
+- Data duration: April to July, 2021
+- Involved countries: 18 (Australia, Brazil, Canada, Denmark, France, Germany, Italy, 
+Japan, Netherlands, Poland, Russia, South Korea, Spain, Sweden, Turkey, Ukraine, United Kingdom, United States)
 
 ### 1. Greedy Algorithm
 
-- Idea: for each round, select the country that can find the most undiscovered servers
-- Result:
+- Idea: For each round, select the country that can find the most undiscovered servers
+- Result: 12 countries
   ```
   inital server count: 2689
   select United_Kingdom, undiscovered server count: 1205
@@ -29,5 +29,15 @@ Japan, Netherlands, Poland, Russia, South_Korea, Spain, Sweden, Turkey, Ukraine,
 
 ### 2. Brute Force Ground Truth
 
-- Idea: use brute force method to find the actual min set cover
-- Result:
+- Idea: Use brute force method to try all combinations of countries, C(18, 1), C(18, 2), ..., C(18, 18). Since a set cover is found using 12 countries by greedy algorithm, I try combinations starting from C(18, 10).
+- Result: 12 countries, same as the result using greedy algorithm.
+  ```
+  C(18, 10) set cover not found
+  C(18, 11) set cover not found
+  C(18, 12) found, combination: ['Brazil', 'South_Korea', 'United_Kingdom', 'Canada', 'France', 'Netherlands', 'Germany', 'Japan', 'Australia', 'Sweden', 'Italy', 'United_States']
+  ```
+  
+### 3. Summary
+- We can get the minimum set cover using greedy algorithm in this case.
+- Countries contributed (12): Australia, Brazil, Canada, France, Germany, Italy, Japan, Netherlands, South Korea, Sweden, UK, US
+- Countries unused (6): Denmark, Poland, Russia, Spain, Turkey, Ukraine
