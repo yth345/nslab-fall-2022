@@ -1,5 +1,6 @@
-## 0930 Server IP Set Cover
+## 0930 Location Set Cover
 
+- Task: Find the min location set that can cover all edge server IPs
 - Data duration: April to July, 2021
 - Involved countries: 18 (Australia, Brazil, Canada, Denmark, France, Germany, Italy, 
 Japan, Netherlands, Poland, Russia, South Korea, Spain, Sweden, Turkey, Ukraine, United Kingdom, United States)
