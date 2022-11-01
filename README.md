@@ -10,6 +10,6 @@ This is my second semester of Special Project in NTU Network and Systems Lab aim
 | 9/23  | Compare the loss of server count when we exclude probes from a country (phase 1) |
 | 9/30  | Find the minimum set cover on server IPs by selecting a combination of countries (Greedy, Brute-force) |
 | 10/7  | Process the raw data of channel probes, convert entries to same data format |
-| 10/14 | Map stream information (language, viewer count) to each probe |
+| 10/14 | 1. Map stream information (language, viewer count) to each probe <br> 2. Cumulate IPs found from a channel in an hour to IPs found from a channel in one day |
 | 10/21 | Find the minimum channel cover of edge server IPs in a day (Greedy approximate algorithm and revised exact algorithm)|
 | 10/28 | Midterm week
