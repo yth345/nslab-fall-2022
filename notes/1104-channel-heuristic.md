@@ -2,8 +2,17 @@
 - Date: 2022-09-12
 - Probing Location: NSLab (Taiwan)
 
-### 1. Statistics
-#### (1) Top 26 languages with the max IPs found in a channel (at 2022-09-12)
+### 1. Data Analysis
+#### (1) Twitch stream info
+Stream information returned from Twitch's API included the following:  
+```
+id, user_id, user_login, user_name, 
+game_id, game_name, 
+type, title, viewer_count, started_at, language, thumbnail_url, tag_ids, is_mature
+```
+The entries we find relevant to our purpose are: viewer_count, langauge
+
+#### (2) Top 26 languages with the max IPs found in a channel (at 2022-09-12)
 Note: If the maximium number of IPs found in a channel in a specific language is the same, order by the average IPs found.
 |     | Languages                  | Channel count | Max IP count | Avg. IP count |
 | --- | -------------------------- | ------------- | ------------ | ------------- |
@@ -31,5 +40,13 @@ Note: If the maximium number of IPs found in a channel in a specific language is
 | 22  | el (Greek)                 | 1348          | 4            | 1.08          |
 | 23  | uk (Ukrainian)             | 1428          | 4            | 1.08          |
 | 24  | pl (Polish)                | 9226          | 4            | 1.08          |
-| 25  | no (Norwegian)               | 1092          | 4            | 1.07          |
+| 25  | no (Norwegian)             | 1092          | 4            | 1.07          |
 | 26  | sv (Swedish)               | 1981          | 4            | 1.07          |
+
+
+### 2. Algorithms
+Since we cannot know the number of servers serving each channel at the time we get a list of stream info, we must develop a heuristic to reduce the channel amount we plan to probe.  
+
+We compare the following algorithms that finds a channel set cover:  
+(1) Greedy approximate  
+(2) h1: Select from most viewer count
