@@ -52,7 +52,7 @@ We compare the following algorithms that finds a channel set cover:
 - **Heuristic:** Select the channel with the most viewer count each round, repeat until we reach set cover.  
 
 #### (1) Result
-We can see that greedy and heuristic algorithm both performs well on reducing the number of channels that we need to probe, except for heuristic algorithm on hour 16 and hour 19.  
+We can see that greedy and heuristic algorithm both performs well on reducing the number of channels that we need to probe to reach set cover, except for heuristic algorithm on hour 16 and hour 19.  
 <img src="/images/channel-1.png" width="600">
 
 If we take a look at what happend in the two hours, we found that some servers appear only in channels that have a few viewers.  
