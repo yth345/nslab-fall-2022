@@ -12,7 +12,7 @@ type, title, viewer_count, started_at, language, thumbnail_url, tag_ids, is_matu
 ```
 The entries we find relevant to our purpose are: `viewer_count`, `langauge`
 
-#### (2) Top 26 languages with the max IPs found in a channel (at 2022-09-12)
+#### (2) Top 26 languages with the most IPs found in one channel (at 2022-09-12)
 Note: If the maximium number of IPs found in a channel in a specific language is the same, order by the average IPs found.
 |     | Languages                  | Channel count | Max IP count | Avg. IP count |
 | --- | -------------------------- | ------------- | ------------ | ------------- |
