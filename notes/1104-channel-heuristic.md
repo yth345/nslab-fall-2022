@@ -48,5 +48,9 @@ Note: If the maximium number of IPs found in a channel in a specific language is
 Since we cannot know the number of servers serving each channel at the time we get a list of stream info, we must develop a heuristic to reduce the channel amount we plan to probe.  
 
 We compare the following algorithms that finds a channel set cover:  
-(1) Greedy approximate  
-(2) h1: Select from most viewer count
+(1) **Greedy:** Select the channel that can cover the most uncovered server IPs, repeat until we reach set cover.  
+(2) **Heuristic:** Select the channel with the most viewer count each round, repeat until we reach set cover.  
+
+#### (1) Result
+We can see that greedy and heuristic algorithm 
+<img src="/images/channel-1.png" width="600">
