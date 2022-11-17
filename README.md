@@ -12,4 +12,6 @@ This is my second semester of Special Project in NTU Network and Systems Lab aim
 | 10/7  | Process the raw data of channel probes, convert entries to same data format |
 | 10/14 | 1. Map stream information (language, viewer count) to each probe <br> 2. Cumulate IPs found from a channel in an hour to IPs found from a channel in one day |
 | 10/21 | Find the minimum channel cover of edge server IPs in a day |
-| 10/28 | Midterm week
+| 10/28 | Midterm week |
+| 11/04 | Test the performance of a heuristic algorithm (select from highest viewer count) to find IP set cover |
+| 11/11 | Look into the relationship between server IPs and channels. Establish a channel selecting criteria for each group of server | 
