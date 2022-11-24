@@ -4,7 +4,7 @@ import os
 file_list = os.listdir('./channel_new/')
 
 for filename in file_list:
-    path = f'./channel_new/{filename}.csv'
+    path = f'./channel_new/{filename}'
     server_dict = dict()
     with open(path, 'r') as f:
         f.readline()
