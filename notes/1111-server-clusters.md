@@ -6,8 +6,8 @@
 | IP set            | # of IPs | Visible time  | IP Location (ISP)  | IATA code | # of unique channels |
 | ----------------- | -------- | ------------- | ------------------ | --------- | -------------------- |
 | 99.181.91.*       | 21       | always        | San Francisco (twitch.tv)  | HKG | 743175       |
-| 99.181.106/107.*  | 15       | 2022-09-11(T14, T15, T16), <br>2022-09-12(T14, T15), <br>2022-09-13(T11, T13~17, T22, T23), <br>2022-09-14(T13, T14, T15), <br>2022-09-15(T14)| San Francisco (twitch.tv)  | SJC | 91602 |
-| 45.113.129/130.*  | 55       | 2022-09-06(T19, T20), <br>2022-09-11(T16~20), <br>2022-09-12 (T19), <br>2022-09-13 (T09), <br>2022-09-15(T08, T21)| Hong Kong (twitch.tv) | TPE |  651 |
+| 99.181.106/107.*  | 15       | 2022-09-11(T14, T15, T16), <br>2022-09-12(T14, T15), <br>2022-09-13(T11, T13~17), <br>2022-09-14(T13, T14, T15), <br>2022-09-15(T14)| San Francisco (twitch.tv)  | SJC | 91602 |
+| 45.113.129/130.*  | 55       | 2022-09-06(T19, T20), <br>2022-09-11(T16~20), <br>2022-09-12 (T19), <br>2022-09-13 (T09, T22, T23), <br>2022-09-15(T08, T21)| Hong Kong (twitch.tv) | TPE |  651 |
 | 52.223.247.*      | 31       | 2022-09-06(T15) | San Francisco (twitch.tv) | LAX | 137          |
 | 163.28.5.33       | 1        | 2022-09-16(T02) | Taipei (Taiwan Academic Network)  | - | 1   |
 
@@ -18,8 +18,46 @@ __(1) Group 99.181.91.\* -- select from highest viewer count__
   - Possible criteria: Select from the highest viewer count channel until we select 3% of channels seen in that hour.
 
 __(2) Group 99.181.106/107.*__ 
-  - If we select from highest viewer count, we have to select up to 57% of channels in an hour, the bottleneck appears at 2022-09-11T14 (select up to 57%) and 2022-09-12T16 (select up to 52%).  
+  - If we select from __highest viewer count__, we have to select up to 57% of channels in an hour, the bottleneck appears at 2022-09-11T14 (select up to 57%) and 2022-09-12T16 (select up to 52%). The discription of IPs found at the two hour is at __3. Appendix__.  
+  - If we try to select __specific hours__ throughout each dates to form a server cover, we see that selecting either hour of `11, 13~17` is okay.  
+  
+  Total number of unique cluster 2 IPs we see across the dates is 15.
+  | hour | # of unique cluster 2 IPs seen in hour |
+  | ---- | -------------------------------------- |
+  | 11 | 15 | 
+  | 13 | 15 | 
+  | 14 | 15 |
+  | 15 | 15 | 
+  | 16 | 15 |
+  | 17 | 15 |
 
+__(3) Group 45.113.129/130.*__ 
+  - If we select from highest viewer count, the amount of channels we have to select are generally high, the highest is 96% of channels at 2022-09-11T18.
+  - If we try to select __specific hours__ throughout each dates to form a server cover, selecting hours `19, 20, 09, 17` can form a min set cover.  
+
+  Total number of unique cluster 3 IPs we see across the dates is 55.
+  | hour | # of unique cluster 3 IPs seen in hour |
+  | ---- | -------------------------------------- |
+  | 08 |  1 |
+  | 09 | 28 |
+  | 16 | 23 |
+  | 17 | 11 |
+  | 18 |  9 |
+  | 19 | 48 |
+  | 20 | 24 |
+  | 21 |  2 |
+  | 22 |  1 |
+  | 23 |  2 |
+  
+__(4) Group 52.223.247.*__ 
+  - If we select from highest viewer count, we need to select up to 19% of channels.
+
+__(5) Group 163.28.5.33__ 
+  - This IP should be a mistake from recording the probes.
+
+
+### 3. Appendix
+#### (1) Cluster 2 bottleneck hours
 2022-09-11T14:
 | server_ip      | channel_cnt | language     | cumu_viewer_cnt |
 | -------------- | ----------- | ------------ | --------------- |
@@ -39,12 +77,3 @@ __(2) Group 99.181.106/107.*__
 |server_ip     |channel_cnt|language    |cumu_viewer_cnt|
 |--------------|-----------|------------|---------------|
 |99.181.106.247|2          |{'en'}      |25             |
-
-__(3) Group 45.113.129/130.*__ 
-  - If we select from highest viewer count, the amount of channels we have to select are generally high, the highest is 96% of channels at 2022-09-11T18.
-
-__(4) Group 52.223.247.*__ 
-  - If we select from highest viewer count, we need to select up to 19% of channels.
-
-__(5) Group 163.28.5.33__ 
-  - This IP should be a mistake from recording the probes.
