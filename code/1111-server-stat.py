@@ -26,13 +26,13 @@ for filename in file_list:
                     cumu_viewer = server_dict[ip][2] + viewer_cnt
                     server_dict[ip] = [channel_cnt, langauge, cumu_viewer]
 
-    print(f'{filename} unique server cnt: {len(server_dict)}')
+    print(f'{filename[:13]} unique server cnt: {len(server_dict)}')
     server_list = []
     for key, value in server_dict.items():
         server_list.append([key, value[0], value[1], value[2]])
     server_list.sort(key=lambda x: x[0])
 
-    w_path = f'./channel_server/{filename}-server.csv' 
+    w_path = f'./channel_server/{filename[:13]}-server.csv' 
     with open(w_path, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['server_ip', 'channel_cnt', 'language', 'cumu_viewer_cnt'])
