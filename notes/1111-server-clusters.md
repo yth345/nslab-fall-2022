@@ -32,7 +32,7 @@ __(2) Group 99.181.106/107.*__
   | 17 | 15 |
 
 __(3) Group 45.113.129/130.*__ 
-  - If we select from highest viewer count, the amount of channels we have to select are generally high, the highest is 96% of channels at 2022-09-11T18.
+  - If we select from __highest viewer count__, the amount of channels we have to select are generally high, the highest is 96% of channels at 2022-09-11T18.
   - If we try to select __specific hours__ throughout each dates to form a server cover, selecting hours `19, 20, 09, 17` can form a min set cover.  
 
   Total number of unique cluster 3 IPs we see across the dates is 55.
