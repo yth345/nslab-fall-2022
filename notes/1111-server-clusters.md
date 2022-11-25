@@ -7,7 +7,7 @@
 | ----------------- | -------- | ------------- | ------------------ | --------- | ---------------- | -------------------- |
 | 99.181.91.*       | 21       | always        | San Francisco <br>(twitch.tv)  | HKG | all        | 743175       |
 | 99.181.106/107.*  | 15       | 09/11 (H: 14, 15, 16), <br>09/12 (H: 14, 15), <br>09/13 (H: 11, 13~17), <br>09/14 (H: 13, 14, 15), <br>09/15 (H: 14)| San Francisco <br>(twitch.tv)  | SJC | Asian, European | 91602 |
-| 45.113.129/130.*  | 55       | 09/06 (H: 19, 20), <br>09/11 (H: 16~20), <br>09/12 (H: 19), <br>09/13 (H: 09, 22, 23), <br>09/15 (H: 08, 21)| Hong Kong <br>(twitch.tv) | TPE | European, American, <br>a few Arabian | 651 |
+| 45.113.129/130.*  | 55       | 09/06 (H: 19, 20), <br>09/11 (H: 16~20), <br>09/12 (H: 19), <br>09/13 (H: 09, 22, 23), <br>09/15 (H: 08, 21)| Hong Kong <br>(twitch.tv) | TPE | European, English, <br>a few Arabian | 651 |
 | 52.223.247.* <br> (AWS IP)     | 31       | 09/06 (H: 15) | San Francisco <br>(twitch.tv) | LAX | mainly Asian, English | 137          |
 | 163.28.5.33       | 1        | 09/16 (H: 02) | Taipei <br>(TANet)  | - | - | 1   |
 
