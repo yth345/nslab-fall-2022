@@ -3,13 +3,13 @@
 - Probing Location: NSLab (Taiwan)
 
 ### 1. Server Overview
-| IP set            | # of IPs | Visible time  | IP Location (ISP)  | IATA code | # of unique channels |
-| ----------------- | -------- | ------------- | ------------------ | --------- | -------------------- |
-| 99.181.91.*       | 21       | always        | San Francisco (twitch.tv)  | HKG | 743175       |
-| 99.181.106/107.*  | 15       | 2022-09-11(T14, T15, T16), <br>2022-09-12(T14, T15), <br>2022-09-13(T11, T13~17), <br>2022-09-14(T13, T14, T15), <br>2022-09-15(T14)| San Francisco (twitch.tv)  | SJC | 91602 |
-| 45.113.129/130.*  | 55       | 2022-09-06(T19, T20), <br>2022-09-11(T16~20), <br>2022-09-12 (T19), <br>2022-09-13 (T09, T22, T23), <br>2022-09-15(T08, T21)| Hong Kong (twitch.tv) | TPE |  651 |
-| 52.223.247.*      | 31       | 2022-09-06(T15) | San Francisco (twitch.tv) | LAX | 137          |
-| 163.28.5.33       | 1        | 2022-09-16(T02) | Taipei (Taiwan Academic Network)  | - | 1   |
+| IP set            | # of IPs | Visible time  | IP Location (ISP)  | IATA code | channel langauge | # of unique channels |
+| ----------------- | -------- | ------------- | ------------------ | --------- | ---------------- | -------------------- |
+| 99.181.91.*       | 21       | always        | San Francisco <br>(twitch.tv)  | HKG | all        | 743175       |
+| 99.181.106/107.*  | 15       | 09/11 (H: 14, 15, 16), <br>09/12 (H: 14, 15), <br>09/13 (H: 11, 13~17), <br>09/14 (H: 13, 14, 15), <br>09/15 (H: 14)| San Francisco <br>(twitch.tv)  | SJC | Asian, European | 91602 |
+| 45.113.129/130.*  | 55       | 09/06 (H: 19, 20), <br>09/11 (H: 16~20), <br>09/12 (H: 19), <br>09/13 (H: 09, 22, 23), <br>09/15 (H: 08, 21)| Hong Kong <br>(twitch.tv) | TPE | European, American, <br>a few Arabian | 651 |
+| 52.223.247.* <br> (AWS IP)     | 31       | 09/06 (H: 15) | San Francisco <br>(twitch.tv) | LAX | mainly Asian, English | 137          |
+| 163.28.5.33       | 1        | 09/16 (H: 02) | Taipei <br>(TANet)  | - | - | 1   |
 
 ### 2. Channel Selecting Criteria
 __(1) Group 99.181.91.\* -- select from highest viewer count__   
