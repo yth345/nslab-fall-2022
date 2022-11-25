@@ -15,7 +15,7 @@
 __(1) Group 99.181.91.\* -- select from highest viewer count__   
   - Consider the dates that we probed all day long, for each hour, selecting the top 0.28% of channels can cover all IPs in this group.  
   - Consider all the dates (excluding those we didn't probe full hour), for each hour, selecting top 0.90% of channels can cover all IPs in this group.
-  - Possible criteria: Select from the highest viewer count channel until we select 3% of channels seen in that hour.
+  - Possible criteria: Select from the highest viewer count channel until we select 2% of channels seen in that hour.
 
 __(2) Group 99.181.106/107.*__ 
   - If we select from __highest viewer count__, we have to select up to 57% of channels in an hour, the bottleneck appears at 2022-09-11T14 (select up to 57%) and 2022-09-12T16 (select up to 52%). The discription of IPs found at the two hour is at __3. Appendix__.  
