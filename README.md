@@ -15,3 +15,4 @@ This is my second semester of Special Project in NTU Network and Systems Lab aim
 | 10/28 | Midterm week |
 | 11/04 | Test the performance of a heuristic algorithm (select from highest viewer count) to find IP set cover |
 | 11/11 | Look into the relationship between server IPs and channels. Establish a channel selecting criteria for each group of server | 
+| 11/18 | Establish a channel selecting criteria for each group of server (cont.) | 
