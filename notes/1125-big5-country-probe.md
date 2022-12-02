@@ -39,4 +39,44 @@ __edgs-hour-sv/__  (WIP)
 
 
 ### 2. Discoveries
+CA, 2022-11-23 H02
+number of unique IPs: 1055
+
+`video-edge-<6-bit code>.<3-bit IATA code><2-bit num>.abs.hls.ttvnw.net`   
+`video-edge-<6-bit code>.<3-bit IATA code><2-bit num>.no-abs.hls.ttvnw.net`  
+e.g., video-edge-c55b1c.arn03.abs.hls.ttvnw.net  
+
+| IP range           | IATA code     | # of unique IPs |
+| ------------------ | ------------- | --------------- |
+| 52.223.192.*       | ams02         | 25  |
+| 52.223.194.*       | lhr03, waw02, mad02, prg03 | 44 |
+| 52.223.195.*       | cdg02         | 101 |
+| 52.223.197.*       | mad01         | 66  |
+| 52.223.199.*       | ber01, arn04, waw02 | 54 |
+| 52.223.200.*       | fra05, osl01  | 51  |
+| 52.223.201.*       | muc01, mad02  | 36  |
+| 52.223.202.*       | cdg10, mad02, prg03 | 41 |
+| 52.223.203.*       | lhr08, mil02, ber01 | 49 |
+| 52.223.204.*       | hel03         | 34  |
+| 52.223.205.*       | lhr08, vie02  | 32  |
+| 52.223.217/218.*   | tyo03, tyo05  | 42  |
+| 99.181.64/65.*     | fra05         | 75  |
+| 99.181.66.*        | fra06, cph01  | 61  |
+| 99.181.67.*        | ams03         | 30  |
+| 99.181.68.*        | mil02, vie02  | 41  |
+| 99.181.69.*        | mrs02, cdg10  | 41  |
+| 99.181.88/89.*     | tyo03, tyo05  | 23  |
+| 185.42.204/205.*   | arn03, fra02  | 161 |
+| 185.42.206.*       | lhr03         | 24  |
+
+
+`getaddrinfo EAI_AGAIN video-weaver.<3-bit IATA code><2-bit num>.hls.ttvnw.net`  
+e.g., getaddrinfo EAI_AGAIN video-weaver.tyo03.hls.ttvnw.net
+
+| IP                 | IATA code     |
+| ------------------ | ------------- |
+| 45.113.131.10      | tyo03         |
+| 52.223.198.17      | mil02         |
+| 99.181.79.2        | fra05         |
+| 99.181.79.14       | fra02         |
 
