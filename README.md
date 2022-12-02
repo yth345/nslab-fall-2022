@@ -16,4 +16,4 @@ This is my second semester of Special Project in NTU Network and Systems Lab aim
 | 11/04 | Tested the performance of a heuristic algorithm (select from highest viewer count) to find IP set cover |
 | 11/11 | Looked into the relationship between server IPs and channels. Established a channel selecting criteria for each group of server | 
 | 11/18 | Established a channel selecting criteria for each group of server (cont.) | 
-| 11/25 | Processed data probed from five big countries (US, UK, CA, FR, DE) |
+| 11/25 | Processed complete data probed from five big countries (US, UK, CA, FR, DE) |
