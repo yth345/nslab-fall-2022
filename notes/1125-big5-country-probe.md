@@ -32,10 +32,10 @@ __edgs-hour/__
 - filenames: the hour of the probes, e.g., `edgs-hour/2022-11-23T02.csv`
 - columns: `user_login`, `probe_t`, `hostname`, `language`, `viewer_cnt`
 
-__edgs-hour-sv/__  (WIP)
+__server/__  (US, UK, DE)
 - Get the IP address of each hostname. Each row records an unique IP found from a country in an hour.
 - filenames: same as __edgs-hour/__
-- columns: `IP`, `hostname_list`, `language_list`, `max_viewer_cnt`
+- columns: `IP`, `hostname_list`, `unique_channel_cnt`, `language_list`, `max_viewer_cnt`
 
 
 ### 2. Discoveries
