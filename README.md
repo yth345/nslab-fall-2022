@@ -17,3 +17,5 @@ This is my second semester of Special Project in NTU Network and Systems Lab aim
 | 11/11 | Looked into the relationship between server IPs and channels. Established a channel selecting criteria for each group of server | 
 | 11/18 | Established a channel selecting criteria for each group of server (cont.) | 
 | 11/25 | Processed complete data probed from five big countries (US, UK, CA, FR, DE) |
+| 12/02 | Got the IP address of each hostname, and recorded the channel information served by an unique IP |
+| 12/09 | Summary of the semester |
