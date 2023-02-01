@@ -1,4 +1,4 @@
-# [nslab] Fall-2022 Special Topics
+# [nslab] Fall-2022 Special Project
 
 This is my second semester of Special Project in NTU Network and Systems Lab aiming to exploring Twitch's CDN.
 
